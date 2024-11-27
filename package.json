@@ -3,7 +3,6 @@
   "description": "StackBlitz AI Agent",
   "private": true,
   "license": "MIT",
-  "packageManager": "pnpm@9.4.0",
   "sideEffects": false,
   "type": "module",
 "scripts": {
@@ -15,9 +14,10 @@
   "start": "bindings=$(./bindings.sh) && wrangler pages dev ./build/client $bindings",
   "preview": "npm run build && npm run start"
 },
-  "engines": {
-    "node": ">=18.18.0"
-  },
+"engines": {
+  "node": "20.15.1",
+  "npm": "9.4.0"
+},
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
     "@codemirror/autocomplete": "^6.17.0",
